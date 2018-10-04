@@ -1,7 +1,14 @@
 #include <iostream>
+#include <cassert>
 using namespace std;
 
 // 3-5-1 #24
+template <class T>
+T sdiv(T a, T b)
+{
+    assert(b != 0);
+    return a/b;
+}
 
 int main() {
     double a, b, c, x;
@@ -15,11 +22,11 @@ int main() {
     }
     else if(c > 0 && a == 0)
     {
-        cout << (a + 4*x) / (c*x) << endl;
+        cout << sdiv((a + 4*x), (c*x)) << endl;
     }
     else
     {
-        cout << 1 - x/c << endl;
+        cout << 1 - sdiv(x, c) << endl;
     }
     return 0;
 }
