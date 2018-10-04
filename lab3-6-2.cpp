@@ -36,7 +36,7 @@ void print_format(unsigned int x)
 		cout << "let";
 		break;
 	case 0:
-		cout << "let";
+		cout << "leta";
 		break;
 	}
 }
