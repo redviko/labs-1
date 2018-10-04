@@ -1,29 +1,23 @@
-program L361;
+#include <iostream>
+using namespace std;
 
-uses crt;
-
-var x,y: real;
-
-begin
-  Readln(x, y);
-  if (x = 0) and (y = 0) then
-    Writeln('Nachalo coordinat')
-  else
-    if (x = 0) and (y <> 0) then 
-      Writeln('prinadlezhit X')
-    else
-    if (x <> 0) and (y = 0)then
-      Writeln('prinadlezhit Y')
-    else
-    if (x > 0) and (y > 0) then
-      Writeln('I')
-    else
-    if (x < 0) and (y > 0) then
-      Writeln('II')
-    else
-    if (x < 0) and (y < 0) then
-      Writeln('III')
-    else
-    if (x > 0) and (y < 0) then
-      Writeln('IV');
-end.
+int main() {
+	double x,y;
+	cin >> x;
+	cin >> y;
+	if(x == 0 && y == 0)
+		cout << "nachalo coordinat" << endl;
+	else if(x == 0 && y != 0)
+		cout << "na osi Y" << endl;
+	else if(x != 0 && y == 0)
+		cout << "na osi X" << endl;
+	else if(x > 0 && y > 0)
+		cout <<"I"<< endl;
+	else if(x < 0 && y > 0)
+		cout << "II" <<endl;
+	else if(x < 0 && y < 0)
+		cout << "III" << endl;
+	else if(x > 0 && y < 0)
+		cout << "IV" << endl;
+	return 0;
+}
