@@ -6,7 +6,11 @@ using namespace std;
 template <class T>
 T sdiv(T a, T b)
 {
-    assert(b != 0);
+    if(b == 0)
+    {
+        cout << "division by zero" << endl;
+        exit(-1);
+    }
     return a/b;
 }
 
