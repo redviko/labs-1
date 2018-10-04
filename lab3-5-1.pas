@@ -24,8 +24,8 @@ begin
   else
     if (c > 0) and (a = 0) then
     	begin
-    	writeln((a + 4*x) / (c*x));
+    	writeln(sdiv((a + 4*x), (c*x)));
     	end
     else
-    	writeln(1 + x/(c + 5));
+    	writeln(1 + sdiv(x, c + 5));
 end.
