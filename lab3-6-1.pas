@@ -10,15 +10,20 @@ begin
     Writeln('Nachalo coordinat')
   else
     if (x = 0) and (y <> 0) then 
-      Writeln('prinadlezhit X')
+      Writeln('na osi Y')
     else
     if (x <> 0) and (y = 0)then
-      Writeln('prinadlezhit Y')
+      Writeln('na osi X')
     else
     if (x > 0) and (y > 0) then
       Writeln('I')
     else
-    if (x < 0) and (y < 0) then
+    if (x < 0) and (y > 0) then
       Writeln('II')
     else
+    if (x < 0) and (y < 0) then
+      Writeln('III')
+    else
+    if (x > 0) and (y < 0) then
+      Writeln('IV');
 end.
